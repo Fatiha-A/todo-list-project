@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: url(stay\ at.jpeg) 
+  no-repeat center center/cover;
+  display: flex;
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#070000;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: #e9c1c1;
+  padding: 30px;
+  border-radius: 46px;
+  box-shadow: 0 4px 8px rgba(185, 126, 146, 0.767);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 46px;
+  background: #f3c6dd;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 46px;
+  background: #f3c6dd;
+  border: #f3c6dd;
+
+}
+
+#addButton {
+  background: #f3c6dd;
+  padding: 12px 6px;
+  border-radius: 46px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#taskList {
+  list-style-type: none;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f3c6dd;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+}
+
+.task-left input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-name {
+  font-size: 16px;
+  
+}
+
+.task-name.completed {
+  text-decoration: line-through;
+  color: #fcf9f9;
+  
+}
+
+.deleteButton {
+  padding: 12px 16px;
+  border-radius: 46px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: #1a02022f;
+
+@media (max-width: 599px) {
+  .container {
+    padding: 20px;
+    max-width: 100%;
+    min-height: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #taskInput {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #addButton {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-left {
+    margin-bottom: 10px;
+  }
+
+  .deleteButton {
+    align-self: flex-end;
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+}
